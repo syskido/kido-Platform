@@ -1,4 +1,3 @@
-using System.Xml;
 using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
@@ -35,7 +34,7 @@ public class PlayerMovement : MonoBehaviour
 
         //Set animator parameters
         anim.SetBool("run", horzontalInput != 0);
-        anim.SetBool("grounded", isGrounded());
+        anim.SetBool("grounded", isGrounded());       
 
 
         if (wallJumpCooldown > 0.2f)
