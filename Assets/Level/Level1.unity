@@ -7357,7 +7357,7 @@ GameObject:
   - component: {fileID: 1735166114}
   - component: {fileID: 1735166113}
   - component: {fileID: 1735166112}
-  - component: {fileID: 1735166111}
+  - component: {fileID: 1735166116}
   m_Layer: 0
   m_Name: Spikehead
   m_TagString: Untagged
@@ -7365,18 +7365,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1735166111
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1735166110}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9f5bbbfcc2a17d7419a3e198268a999e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!50 &1735166112
 Rigidbody2D:
   serializedVersion: 4
@@ -7516,6 +7504,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1735166116
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1735166110}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f5bbbfcc2a17d7419a3e198268a999e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 2
+  range: 1
+  checkDelay: 1
 --- !u!1 &1753456673
 GameObject:
   m_ObjectHideFlags: 0
@@ -8993,7 +8996,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   previousRoom: {fileID: 106104610}
-  nextRoom: {fileID: 0}
+  nextRoom: {fileID: 1549006699}
   cam: {fileID: 519420033}
 --- !u!50 &2006302189
 Rigidbody2D:

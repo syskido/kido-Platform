@@ -22,7 +22,7 @@ public class EnemyProjectile : EnmeyDamage //Will damage the player every time i
             gameObject.SetActive(false);
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private new void OnTriggerEnter2D(Collider2D collision)
     {
         base.OnTriggerEnter2D(collision);
         gameObject.SetActive(false);
