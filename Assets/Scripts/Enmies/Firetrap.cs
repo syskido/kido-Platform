@@ -24,7 +24,7 @@ public class Firetrap : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.tag == "Player" && !triggered)
+        if (collision.tag == "Player")
         {
             if (!triggered)
             {
@@ -38,11 +38,14 @@ public class Firetrap : MonoBehaviour
     {
         triggered = true;
         spriteRend.color = Color.red;
-        yield return new WaitForSeconds(activationDelay);
-        anim.SetBool("activated", true);
 
+        yield return new WaitForSeconds(activationDelay);
         spriteRend.color = Color.white;
         active = true;
+        anim.SetBool("activated", true);
+
+        
+        
         yield return new WaitForSeconds(activeTime);
         active = false;
         triggered = false;
