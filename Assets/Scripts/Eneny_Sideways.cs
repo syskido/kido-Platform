@@ -1,4 +1,3 @@
-using Unity.VisualScripting;
 using UnityEngine;
 
 public class Eneny_Sideways : MonoBehaviour
@@ -6,9 +5,10 @@ public class Eneny_Sideways : MonoBehaviour
     [SerializeField] private float movementDistance;
     [SerializeField] private float speed;
     [SerializeField] private float damage;
+    private bool movingLeft;
     private float leftEdge;
     private float rightEdge;
-    private bool movingLeft;
+    
 
     private void Awake()
     {
@@ -31,7 +31,7 @@ public class Eneny_Sideways : MonoBehaviour
         {
             if (transform.position.x < rightEdge)
             {
-                transform.position = new Vector3(transform.position.x + speed * Time.deltaTime, transform.position.y, transform.position.z);`
+                transform.position = new Vector3(transform.position.x + speed * Time.deltaTime, transform.position.y, transform.position.z);
             }
             else
                 movingLeft = true;
